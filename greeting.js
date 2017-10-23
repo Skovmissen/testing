@@ -6,7 +6,7 @@ function greeting(time) {
         return "Good night";
     }
     else if (hours < 12) {
-        return "Good morning";
+        return "Good morning" + hours;
     }
     else if (hours < 18) {
         return "Good afternoon";

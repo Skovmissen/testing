@@ -2,8 +2,9 @@ import { greeting } from '../greeting';
 describe("Suite", () => {
     it("should say 'Good morning' at 4am", () => {
         let time = new Date();
+        let hours = time.getHours();
         time.setHours(4);
-        expect(greeting(time)).toBe("Good morning");
+        expect(greeting(time)).toBe("Good morning" + hours);
     });
     it("should say 'Good afternoon' at 12pm", () => {
         let time = new Date();

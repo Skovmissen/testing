@@ -3,7 +3,7 @@ export function greeting(time: Date) {
     if (hours < 4 || hours >= 22) {
         return "Good night";
     } else if (hours < 12) {
-        return "Good morning";
+        return "Good morning" + hours;
     } else if (hours < 18) {
         return "Good afternoon";
     } else {

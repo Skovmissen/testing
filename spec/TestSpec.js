@@ -4,8 +4,9 @@ var greeting_1 = require("../greeting");
 describe("Suite", function () {
     it("should say 'Good morning' at 4am", function () {
         var time = new Date();
+        var hours = time.getHours();
         time.setHours(4);
-        expect(greeting_1.greeting(time)).toBe("Good morning");
+        expect(greeting_1.greeting(time)).toBe("Good morning" + hours);
     });
     it("should say 'Good afternoon' at 12pm", function () {
         var time = new Date();
